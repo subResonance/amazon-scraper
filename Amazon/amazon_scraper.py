@@ -17,8 +17,12 @@ products = []
 
 for url in URLs:
     driver.get(url)
-    itemTitle = driver.find_element_by_id('productTitle').text
-
+    try:
+        itemTitle = driver.find_element_by_id('productTitle').text
+    except:
+        itemTitle = None
+        print("Item at: ", url, " is no longer available!")
+        continue
     try:
         itemSeller = driver.find_element_by_id('bylineInfo').text
     except:
