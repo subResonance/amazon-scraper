@@ -25,12 +25,11 @@ Changelog
 -----------------------------------------------------------------------------------------------------------------------------------
 
 ## [1.1] - 2020-04-01
-### Added
+### Changed
 - amazon_scraper.py
 	- Exception handling for attributes that are not retrived
 	- Secondary selector id for the listing's price attributes
 	- Indentation and formating for the generated product_info.json
-### Changed
 - product_urls.txt
 	- Updating file by version does in fact retain the original URL
 		-  https://drive.google.com/file/d/1Vu2e_00dniSqkHH9115DP0qeqpwMuR4C/view
